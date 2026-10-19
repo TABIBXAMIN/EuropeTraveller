@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Choose a country, travel month and activities for your trip.">
+    <title>Plan a Trip | Europe Traveller</title>
+    <link rel="icon" href="images/europe-traveller-logo-matched.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="page-plan">
+    <a class="skip" href="#main">Skip to content</a>
+    <!-- Site logo and navigation. -->
+    <header class="header">
+      <div class="container head-inner">
+        <a class="logo" href="index.html" aria-label="Europe Traveller home"><img src="images/europe-traveller-logo-matched.png" alt="Europe Traveller" width="2103" height="748"></a>
+        <input type="checkbox" id="menu" class="menu-toggle" aria-label="Show navigation menu" aria-controls="main-navigation">
+        <label for="menu" class="menu-button">Menu <span aria-hidden="true">+</span></label>
+        <nav class="nav" id="main-navigation" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="destinations.html">Destinations</a>
+          <a href="styles.html">Travel tips</a>
+          <a href="about.html">About</a>
+          <a href="enquiry.html" aria-current="page" class="active">Plan a trip</a>
+        </nav>
+      </div>
+    </header>
+    <!-- The main content for this page. -->
+    <main id="main">
+      <section class="page-hero">
+        <div class="container page-hero-grid">
+          <div>
+            <span class="eyebrow">YOUR TRIP STARTS HERE</span>
+            <h1>Your next trip.<br><em>Starts here.</em></h1>
+            <p>Choose a country and travel month. Write down the things you want to see and do.</p>
+          </div>
+          <img src="images/photos/switzerland.jpg" alt="A chalet below the cliffs and mountains of Lauterbrunnen" width="2400" height="1600" loading="lazy">
+        </div>
+      </section>
+      <section class="section container">
+        <div class="plan-grid">
+          <div class="form-panel">
+            <span class="eyebrow">YOUR TRAVEL PLAN</span>
+            <h2>Make it your trip.</h2>
+            <p>Fill in the details below. Use the plan to keep your travel ideas in one place. Start with a country and the month you would like to go. Add the number of people travelling and choose the kind of holiday you enjoy. You can then write a short list of places to visit and things to do.</p>
+            <form>
+              <div class="form-row">
+                <label for="place">
+                  Choose a country
+                  <select id="place">
+                    <option value="">Select a destination</option>
+                    <option value="france">France</option>
+                    <option value="spain">Spain</option>
+                    <option value="italy">Italy</option>
+                    <option value="greece">Greece</option>
+                    <option value="portugal">Portugal</option>
+                    <option value="switzerland">Switzerland</option>
+                    <option value="austria">Austria</option>
+                    <option value="germany">Germany</option>
+                    <option value="turkey">Turkey</option>
+                    <option value="united-kingdom">United Kingdom</option>
+                  </select>
+                </label>
+                <label for="style">
+                  Type of holiday
+                  <select id="style">
+                    <option>Cities and museums</option>
+                    <option>Beaches</option>
+                    <option>Nature and mountains</option>
+                    <option>A mix of activities</option>
+                  </select>
+                </label>
+              </div>
+              <div class="form-row">
+                <label for="month">When would you like to go?<input id="month" type="month"></label>
+                <label for="travellers">Number of travellers<input id="travellers" type="number" min="1" max="20" value="2"></label>
+              </div>
+              <label for="notes">What would you like to do?<textarea id="notes" rows="5" maxlength="600" placeholder="Places to visit, food to try, how much you want to spend..."></textarea></label>
+              <fieldset class="trip-interests">
+                <legend>What would you like to include?</legend>
+                <label><input type="checkbox"> Food and local markets</label>
+                <label><input type="checkbox"> Art and culture</label>
+                <label><input type="checkbox"> Beaches and coastlines</label>
+                <label><input type="checkbox"> Nature and walks</label>
+              </fieldset>
+              <button type="reset" class="button dark">Start again</button>
+            </form>
+            <p class="tip-small">Use your browser's Print option to print your plan or save it as a PDF.</p>
+          </div>
+          <aside class="plan-aside">
+            <img src="images/photos/portugal.jpg" alt="Traditional boats and colourful riverside buildings in Porto" width="2225" height="1600" loading="lazy">
+            <div>
+              <h3>Before you travel</h3>
+              <p>Start with the main parts of your trip. You can add smaller details later. A clear list helps you see what you have decided and what you still need to check.</p>
+              <ol>
+                <li>Choose a country you want to explore.</li>
+                <li>Decide how long you would like to stay.</li>
+                <li>Plan how much you can spend on travel and a place to stay.</li>
+                <li>Write down the things you want to do.</li>
+              </ol>
+              <a class="text-link" href="destinations.html">View destinations &rarr;</a>
+            </div>
+          </aside>
+        </div>
+      </section>
+      <section class="section sand">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">MAKE A PLAN THAT WORKS FOR YOU</span>
+              <h2>Start with a few clear choices.</h2>
+            </div>
+          </div>
+          <div class="three-grid step-grid">
+            <div class="step-card">
+              <span class="step">01</span>
+              <h3>Choose what matters most</h3>
+              <p>Write down the things you would most like to see. These could be a famous building, a beach, a museum or a place with a good view. Use this list to decide where to spend your time.</p>
+            </div>
+            <div class="step-card">
+              <span class="step">02</span>
+              <h3>Keep nearby places together</h3>
+              <p>Look at a map before deciding what to do each day. Places that are close to each other may fit into the same day. This can reduce travel time and help you spend more time exploring.</p>
+            </div>
+            <div class="step-card">
+              <span class="step">03</span>
+              <h3>Leave some free time</h3>
+              <p>You do not need to fill every hour. Leave time for meals, rest and places you find during the trip. A plan can help you get started while still giving you room to change your mind.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Email -->
+    <section class="newsletter" aria-labelledby="newsletter-title">
+      <div class="container newsletter-grid">
+        <div>
+          <span class="eyebrow">TRAVEL UPDATES</span>
+          <h2 id="newsletter-title">Get travel ideas<br><em>by email.</em></h2>
+          <p>Find a new place for your next trip. Get ideas on where to go and what to do.</p>
+        </div>
+        <form action="about.html#subscribed" method="get">
+          <label for="subscribe-email">Your email address</label>
+          <div class="subscribe-row">
+            <input id="subscribe-email" type="email" autocomplete="email" placeholder="you@example.com" required aria-describedby="subscribe-note">
+            <button class="button" type="submit">Sign up <span aria-hidden="true">&rarr;</span></button>
+          </div>
+          <p id="subscribe-note" class="tip-small">Places to visit and tips for your trip.</p>
+        </form>
+      </div>
+    </section>
+    <!-- Footer links appear on every page. -->
+    <footer class="footer">
+      <div class="container foot-grid">
+        <div class="footer-intro">
+          <a class="footer-brand" href="index.html">EUROPE<br><span>TRAVELLER.</span></a>
+          <p>New places. Good food. Great views.<br>Find a trip that feels right for you.</p>
+        </div>
+        <div>
+          <strong>Explore</strong>
+          <a href="destinations.html" class="footer-link">Destinations</a>
+          <a href="styles.html" class="footer-link">Travel tips</a>
+          <a href="enquiry.html" class="footer-link">Plan a trip</a>
+        </div>
+        <div>
+          <strong>Say hello</strong>
+          <a href="about.html" class="footer-link">About Europe Traveller</a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="footer-link">Instagram &nearr;</a>
+          <a href="#main" class="footer-link">Back to top &uarr;</a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>&copy; 2026 Europe Traveller</span>
+        <span>A new place is a good place to start.</span>
+      </div>
+    </footer>
+  </body>
+</html>
