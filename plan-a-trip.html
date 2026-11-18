@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Choose a country, travel month and activities for your trip.">
+    <title>Plan a Trip | Europe Traveller</title>
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body id="top">
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="header">
+      <div class="container head-inner">
+        <a class="logo" href="index.html" aria-label="Europe Traveller home">
+          <img src="images/wordmark.png" alt="Europe Traveller" width="720" height="247">
+        </a>
+        <input type="checkbox" id="menu" class="menu-toggle" aria-label="Show navigation menu" aria-controls="main-navigation">
+        <label for="menu" class="menu-button">Menu <span aria-hidden="true">+</span></label>
+        <nav class="nav" id="main-navigation" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="destinations.html">Destinations</a>
+          <a href="travel-tips.html">Travel tips</a>
+          <a href="about.html">About</a>
+          <a href="plan-a-trip.html" aria-current="page">Plan a trip</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main" tabindex="-1">
+      <section class="page-hero">
+        <div class="container page-hero-grid">
+          <div>
+            <span class="eyebrow">YOUR TRIP STARTS HERE</span>
+            <h1>Where in Europe<br><em>will you go?</em></h1>
+            <p>Start with a place you’d love to visit. Build the rest of your trip around it.</p>
+          </div>
+          <img src="images/photos/switzerland.jpg" alt="Swiss houses in the mountain valley of Lauterbrunnen" width="1800" height="1350" fetchpriority="high"
+               srcset="images/photos/switzerland-768.jpg 768w, images/photos/switzerland.jpg 1800w"
+               sizes="(max-width: 650px) calc(100vw - 36px), (max-width: 1050px) 50vw, 620px">
+        </div>
+      </section>
+      <section class="section container" id="planner">
+        <div class="plan-grid">
+          <div class="form-panel">
+            <span class="eyebrow">YOUR TRAVEL PLAN</span>
+            <h2>Plan your European break</h2>
+            <p>Tell us who’s travelling, when you can go and what you’d like to see.</p>
+            <form id="trip-form" action="#enquiry-submitted">
+              <h3>Lead traveller</h3>
+              <div class="form-row">
+                <label>First name<input autocomplete="given-name" required></label>
+                <label>Last name<input autocomplete="family-name" required></label>
+              </div>
+              <div class="form-row">
+                <label>Email address<input type="email" autocomplete="email" required></label>
+                <label>Phone (optional)<input type="tel" autocomplete="tel"></label>
+              </div>
+              <h3>The trip you have in mind</h3>
+              <div class="form-row">
+                <label for="place">
+                  Choose a country
+                  <select id="place">
+                    <option value="">Select a destination</option>
+                    <option>France</option>
+                    <option>Spain</option>
+                    <option>Italy</option>
+                    <option>Greece</option>
+                    <option>Portugal</option>
+                    <option>Switzerland</option>
+                    <option>Austria</option>
+                    <option>Germany</option>
+                    <option>Turkey</option>
+                    <option>United Kingdom</option>
+                  </select>
+                </label>
+                <label for="holiday-type">
+                  Type of holiday
+                  <select id="holiday-type">
+                    <option>Cities and museums</option>
+                    <option>Beaches</option>
+                    <option>Nature and mountains</option>
+                    <option>A mix of activities</option>
+                  </select>
+                </label>
+              </div>
+              <div class="form-row">
+                <label for="month">When would you like to go?<input id="month" type="month" placeholder="YYYY-MM" pattern="[0-9]{4}-(0[1-9]|1[0-2])"></label>
+                <label for="travellers">Number of travellers<input id="travellers" type="number" min="1" max="20" value="2" required></label>
+              </div>
+              <label>Spending limit per traveller
+                <select>
+                  <option>Undecided</option>
+                  <option>Under £500</option>
+                  <option>£500–£999</option>
+                  <option>£1,000–£1,999</option>
+                  <option>£2,000 or more</option>
+                </select>
+              </label>
+              <label for="notes">What would you like to do?<textarea id="notes" rows="5" maxlength="600" placeholder="A night train to Vienna, a market in Porto or a quiet place by the sea…"></textarea></label>
+              <fieldset class="trip-interests">
+                <legend>What would you like to include?</legend>
+                <label><input type="checkbox"> Food and local markets</label>
+                <label><input type="checkbox"> Art and culture</label>
+                <label><input type="checkbox"> Beaches and coastlines</label>
+                <label><input type="checkbox"> Nature and walks</label>
+              </fieldset>
+              <div class="enquiry-actions">
+                <button type="submit" class="button">Submit enquiry</button>
+                <button type="reset" class="reset-link">Start again</button>
+              </div>
+            </form>
+          </div>
+          <aside class="plan-aside">
+            <img src="images/photos/portugal.jpg" alt="Porto’s Ribeira district beside the Douro River" width="1800" height="1013" loading="lazy"
+                 srcset="images/photos/portugal-768.jpg 768w, images/photos/portugal.jpg 1800w"
+                 sizes="(max-width: 650px) calc(100vw - 36px), (max-width: 1050px) 50vw, 620px">
+            <div>
+              <h3>Before you send your enquiry</h3>
+              <ol>
+                <li>Check that your travel month works for everyone in your group.</li>
+                <li>Decide whether your budget includes travel as well as accommodation.</li>
+                <li>Mention any stops you want to make along the way.</li>
+              </ol>
+              <h4>Still choosing a country?</h4>
+              <a class="text-link" href="destinations.html">View destinations</a>
+            </div>
+          </aside>
+        </div>
+      </section>
+      <section class="section newsletter" aria-labelledby="newsletter-title">
+        <div class="container newsletter-layout">
+          <div>
+            <h2 id="newsletter-title">Postcards from Europe</h2>
+            <p>Get ideas for your next break, from Porto’s riverside streets to walking routes in the Swiss Alps.</p>
+          </div>
+          <form id="newsletter-form" aria-label="Newsletter sign-up" action="#newsletter-submitted">
+            <fieldset>
+              <legend>Join the newsletter</legend>
+              <div class="form-row">
+                <label>First name<input autocomplete="given-name" required></label>
+                <label>Last name<input autocomplete="family-name" required></label>
+              </div>
+              <label>Email address<input type="email" autocomplete="email" required></label>
+              <button class="button" type="submit">Sign me up</button>
+            </fieldset>
+          </form>
+        </div>
+      </section>
+      <section class="confirmation" id="enquiry-submitted" aria-labelledby="enquiry-title" tabindex="-1">
+        <div class="confirmation-card">
+          <h2 id="enquiry-title">Enquiry submitted</h2>
+          <p>Thank you for sharing your travel plans.</p>
+          <a class="button" href="#planner">Close</a>
+        </div>
+      </section>
+      <section class="confirmation" id="newsletter-submitted" aria-labelledby="signup-title" tabindex="-1">
+        <div class="confirmation-card">
+          <h2 id="signup-title">Sign-up submitted</h2>
+          <p>Thank you for your interest in the Europe Traveller newsletter.</p>
+          <a class="button" href="#newsletter-form">Close</a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container foot-grid">
+        <div class="footer-intro">
+          <a class="footer-brand" href="index.html">Europe Traveller</a>
+          <p>Destination guides and tips for planning a trip around Europe.</p>
+        </div>
+        <div>
+          <strong>Explore</strong>
+          <a href="destinations.html" class="footer-link">Destinations</a>
+          <a href="travel-tips.html" class="footer-link">Travel tips</a>
+          <a href="plan-a-trip.html" class="footer-link">Plan a trip</a>
+        </div>
+        <div>
+          <strong>More information</strong>
+          <a href="about.html" class="footer-link">About Europe Traveller</a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="footer-link">Instagram</a>
+          <a href="#top" class="footer-link">Back to top</a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <small>&copy; 2026 Europe Traveller</small>
+      </div>
+    </footer>
+  </body>
+</html>
